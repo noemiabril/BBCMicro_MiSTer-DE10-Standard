@@ -1,12 +1,12 @@
 #============================================================
 # SDIO
 #============================================================
-set_location_assignment PIN_AF25 -to SDIO_DAT[0]
-set_location_assignment PIN_AF23 -to SDIO_DAT[1]
-set_location_assignment PIN_AD26 -to SDIO_DAT[2]
-set_location_assignment PIN_AF28 -to SDIO_DAT[3]
-# set_location_assignment PIN_AF27 -to SDIO_CMD
-# set_location_assignment PIN_AH26 -to SDIO_CLK
+#set_location_assignment PIN_AF25 -to SDIO_DAT[0]
+#set_location_assignment PIN_AF23 -to SDIO_DAT[1]
+#set_location_assignment PIN_AD26 -to SDIO_DAT[2]
+#set_location_assignment PIN_AF28 -to SDIO_DAT[3]
+#set_location_assignment PIN_AF27 -to SDIO_CMD
+#set_location_assignment PIN_AH26 -to SDIO_CLK
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDIO_*
 
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDIO_*
@@ -63,6 +63,8 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to VGA_*
 #set_location_assignment PIN_AE25 -to AUDIO_R
 #set_location_assignment PIN_AG26 -to AUDIO_SPDIF
 
+#set_location_assignment PIN_AC24 -to AUDIO_L
+
 set_location_assignment PIN_AJ29 -to AUD_ADCDAT
 set_location_assignment PIN_AH29 -to AUD_ADCLRCK
 set_location_assignment PIN_AF30 -to AUD_BCLK
@@ -70,8 +72,8 @@ set_location_assignment PIN_AF29 -to AUD_DACDAT
 set_location_assignment PIN_AG30 -to AUD_DACLRCK
 set_location_assignment PIN_AH30 -to AUD_XCK
 
- set_location_assignment PIN_Y24 -to AUD_I2C_SCLK
- set_location_assignment PIN_Y23 -to AUD_I2C_SDAT
+set_location_assignment PIN_Y24 -to I2C_SCLK
+set_location_assignment PIN_Y23 -to I2C_SDAT
 
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_*
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to I2C_*
