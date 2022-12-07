@@ -99,7 +99,7 @@ set_location_assignment PIN_AE13 -to SDRAM_nRAS
 
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDRAM_*
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDRAM_*
-set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SDRAM_*
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SDRAM_*														  
 set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to SDRAM_DQ[*]
 set_instance_assignment -name FAST_INPUT_REGISTER ON -to SDRAM_DQ[*]
 set_instance_assignment -name ALLOW_SYNCH_CTRL_USAGE OFF -to *|SDRAM_*
@@ -123,6 +123,7 @@ set_instance_assignment -name ALLOW_SYNCH_CTRL_USAGE OFF -to *|SDRAM_*
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK1_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK2_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK3_50
+
 set_location_assignment PIN_Y26 -to FPGA_CLK1_50
 set_location_assignment PIN_AA16 -to FPGA_CLK2_50
 set_location_assignment PIN_AF14 -to FPGA_CLK3_50
